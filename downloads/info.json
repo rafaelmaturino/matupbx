@@ -1,0 +1,5 @@
+{
+  "release": "https://github.com/rafaelmaturino/iso-profiles/releases/latest",
+  "status": "building",
+  "note": "ISO sendo gerada no GitHub Actions (edition=matupbx). Atualizar size/sha256/url após a release."
+}

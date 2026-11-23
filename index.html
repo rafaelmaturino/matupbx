@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MatuPBX — PBX web com Asterisk 20 LTS e BigLinux</title>
+  <meta name="description" content="MatuPBX: sistema PBX (telefonia IP) baseado no SNEP 3, com Asterisk 20 LTS, PHP 8 e ISO BigLinux pronta para instalar. Ramais, IVR, filas, billing e mais.">
+  <link rel="icon" type="image/png" href="assets/logo-128.png">
+  <link rel="stylesheet" href="style.css">
+  <meta property="og:title" content="MatuPBX — PBX web com Asterisk 20 LTS">
+  <meta property="og:description" content="Todas as funcionalidades do SNEP 3 em uma distribuição BigLinux com Asterisk 20 LTS e interface PHP 8.">
+  <meta property="og:image" content="assets/logo.png">
+  <meta property="og:type" content="website">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#">
+        <img src="assets/logo-128.png" alt="" width="32" height="32">
+        <span>MatuPBX</span>
+      </a>
+      <nav>
+        <a href="#recursos">Recursos</a>
+        <a href="#stack">Stack</a>
+        <a href="#download">Download</a>
+        <a href="#instalar">Instalar</a>
+        <a href="https://github.com/rafaelmaturino/matupbx" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+      <a class="btn btn-small" href="#download">Baixar ISO</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <img class="hero-logo" src="assets/logo.png" alt="Logo MatuPBX" width="140" height="51">
+      <h1>MatuPBX</h1>
+      <p class="tagline">Sistema <strong>PBX web</strong> completo — fork livre do <strong>SNEP 3</strong> com todas as funcionalidades, <strong>Asterisk 20 LTS</strong>, PHP 8 e uma ISO <strong>BigLinux</strong> pronta para instalar.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#download">Baixar ISO</a>
+        <a class="btn btn-ghost" href="https://github.com/rafaelmaturino/matupbx" target="_blank" rel="noopener">Ver no GitHub</a>
+      </div>
+      <p class="hero-meta">ISO BigLinux · Asterisk 20.22.0 LTS · PHP 8 + zf1-future · GPL-2.0</p>
+    </div>
+  </section>
+
+  <section class="section" id="recursos">
+    <div class="container">
+      <h2>Todas as funcionalidades do SNEP</h2>
+      <p class="section-lead">O MatuPBX preserva o conjunto completo do SNEP 3.06.2 — ramais, troncos, IVR, filas, billing e relatórios — com identidade visual renovada em teal.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="card-icon">☎️</div>
+          <h3>Ramais e troncos</h3>
+          <p>Gerenciamento SIP/IAX2 pela web, com gravação automática de config no Asterisk.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🎛️</div>
+          <h3>IVR e filas</h3>
+          <p>Menus de voz interativos, filas de atendimento e painel de agentes (Qmanager).</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">💳</div>
+          <h3>Billing</h3>
+          <p>Controle de custos por tronco e rota, minutagem e relatórios de uso.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">📊</div>
+          <h3>Relatórios</h3>
+          <p>Chamadas, ranking, sintético, analítico e por serviços — exportáveis pela interface.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🔁</div>
+          <h3>Callback e portabilidade</h3>
+          <p>Retorno de chamada e portabilidade numérica integrados ao fluxo de rotas.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🌍</div>
+          <h3>Multi-idioma</h3>
+          <p>Português, inglês e espanhol — com auditoria de usuários e gravações baixáveis.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="stack">
+    <div class="container">
+      <h2>Stack estável e moderna</h2>
+      <p class="section-lead">Base BigLinux, Asterisk LTS ainda mantido e PHP 8 com Zend Framework 1 compatível.</p>
+
+      <div class="stack-table-wrap">
+        <table class="stack-table">
+          <thead>
+            <tr><th>Componente</th><th>Versão / escolha</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Distribuição</td><td>BigLinux (perfil oficial <code>iso-profiles</code>)</td></tr>
+            <tr><td>Asterisk</td><td><strong>20.22.0 LTS</strong> — <code>chan_sip</code> exigido pelo SNEP; removido desde o 21</td></tr>
+            <tr><td>PHP</td><td>8.x + <a href="https://github.com/Shardj/zf1-future" target="_blank" rel="noopener">zf1-future</a></td></tr>
+            <tr><td>Banco</td><td>MariaDB / MySQL (ODBC para voicemail)</td></tr>
+            <tr><td>Web</td><td>Apache httpd + mod_php</td></tr>
+            <tr><td>App</td><td><a href="https://github.com/rafaelmaturino/matupbx" target="_blank" rel="noopener">github.com/rafaelmaturino/matupbx</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="swatches" aria-label="Cores do MatuPBX">
+        <div class="swatch" style="--c:#0d9488"><span>Primary</span><code>#0D9488</code></div>
+        <div class="swatch" style="--c:#0f766e"><span>Dark</span><code>#0F766E</code></div>
+        <div class="swatch" style="--c:#115e59"><span>Deep</span><code>#115E59</code></div>
+        <div class="swatch" style="--c:#134e4a"><span>Ink</span><code>#134E4A</code></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="download">
+    <div class="container narrow">
+      <h2>Download</h2>
+      <p class="section-lead">A ISO é publicada como release no GitHub. Grave em um pendrive (Rufus, BalenaEtcher ou <code>dd</code>) e inicialize no modo Live ou instale.</p>
+
+      <div class="download-card">
+        <div class="download-info">
+          <h3>MatuPBX — ISO BigLinux</h3>
+          <ul class="meta-list">
+            <li><strong>Edição:</strong> <code>matupbx</code> (BigLinux + stack telefônica)</li>
+            <li><strong>Asterisk:</strong> 20.22.0 LTS + ODBC + banco pré-assado</li>
+            <li><strong>Credenciais live:</strong> <code>matupbx</code> / <code>matupbx</code></li>
+            <li><strong>Após instalar:</strong> <code>http://ip/matupbx</code> — <code>admin</code> / <code>admin123</code></li>
+            <li><strong>Tamanho / SHA-256:</strong> <span id="iso-size">—</span> · <code id="iso-sha">—</code></li>
+          </ul>
+        </div>
+        <div class="download-action">
+          <a class="btn btn-primary btn-big" id="btn-download" href="https://github.com/rafaelmaturino/iso-profiles/releases/latest" target="_blank" rel="noopener">
+            ⬇ Baixar ISO
+          </a>
+          <a class="btn btn-ghost btn-big" href="https://github.com/rafaelmaturino/iso-profiles/releases" target="_blank" rel="noopener">
+            Todas as releases
+          </a>
+        </div>
+      </div>
+
+      <div class="note">
+        <strong>Verificação de integridade:</strong> baixe também o arquivo <code>.sha256</code> da release e confira:
+        <pre>sha256sum -c *.iso.sha256</pre>
+        Se a release ainda não estiver publicada, acompanhe o <a href="https://github.com/rafaelmaturino/iso-profiles/actions" target="_blank" rel="noopener">build no Actions</a>.
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="instalar">
+    <div class="container narrow">
+      <h2>Como instalar</h2>
+      <ol class="steps">
+        <li><strong>Baixe a ISO</strong> da release e grave em um pendrive de 8 GB ou maior.</li>
+        <li><strong>Boote pelo pendrive</strong> (UEFI ou Live) e use o sistema antes de instalar.</li>
+        <li><strong>Instale</strong> pelo instalador do BigLinux — a stack (Apache, MariaDB, Asterisk) já vem configurada.</li>
+        <li><strong>Acesse a interface</strong> em <code>http://ip-do-servidor/matupbx</code> com <code>admin</code> / <code>admin123</code>.</li>
+      </ol>
+      <div class="note">
+        <strong>Requisitos mínimos:</strong> 64-bit, 2 GB de RAM (4 GB recomendados), 20 GB de disco e rede. A ISO inclui Asterisk 20 LTS compilado com ODBC e o banco MatuPBX/SNEP inicializado.
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand">
+        <img src="assets/logo-128.png" alt="" width="28" height="28">
+        <span>MatuPBX</span>
+      </div>
+      <p>Fork livre do <a href="https://github.com/xRWill/snep-3" target="_blank" rel="noopener">SNEP 3</a> (GPL-2.0) · Base BigLinux · Asterisk 20 LTS</p>
+      <p class="tiny">
+        <a href="https://github.com/rafaelmaturino/matupbx" target="_blank" rel="noopener">Código</a> ·
+        <a href="https://github.com/rafaelmaturino/iso-profiles" target="_blank" rel="noopener">ISO / perfis</a> ·
+        SNEP é marca de seus respectivos detentores originais. Projeto independente de estudo.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Preenche tamanho/hash da ISO se a release publicar info.json (opcional)
+    fetch('downloads/info.json')
+      .then(r => r.ok ? r.json() : null)
+      .then(info => {
+        if (!info) return;
+        if (info.size) document.getElementById('iso-size').textContent = info.size;
+        if (info.sha256) document.getElementById('iso-sha').textContent = info.sha256;
+        if (info.url) document.getElementById('btn-download').href = info.url;
+      })
+      .catch(() => {});
+  </script>
+</body>
+</html>
