@@ -1,0 +1,48 @@
+<!--
+
+Class containing help text of the music on hold
+*
+* @category  MatuPBX
+* @package   MatuPBX
+* @copyright Copyright (c) 2014 OpenS Tecnologia
+* @author    Tiago Zimmermann <tiago.zimmermann@opens.com.br>
+*
+-->
+
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h2>Músicas em Espera</h2>
+
+        Esta rotina permite ao usuário manter um cadastro de arquivos para serem 
+        usados como "Músicas de Espera" pelo MatuPBX.
+        As músicas em espera são agrupadas em "SEÇÕES" e por padrão, o MatuPBX cria 
+        três seções na sua instalação, além da seção "Default" . Os arquivos de 
+        som serão colocados nestas seções conforme for o caso e as seções serão 
+        usadas de acordo com o Plano de Discagem definido.
+
+        <h2>Músicas em Espera - Incluir / Editar</h2>
+
+        Esta rotina permite que seções de música em Espera sejam cadastradas ou alteradas. As 
+        músicas em espera são agrupadas em "SEÇÕES" e por padrão, o MatuPBX cria três seções na 
+        sua instalação, além da seção "Default". Os arquivos de som serão colocados nestas seções 
+        conforme for o caso e as seções serão usadas de acordo com o Plano de Discagem definido. 
+        Esta rotina atualiza o arquivo snep­musiconhold.conf.
+        <br><strong>Nome: </strong>Define o nome da seção. Não use espaços ou caracteres acentuados/especiais 
+        como: çãé@#%... 
+        <br><strong>Descrição: </strong>Define uma descrição para a seção. 
+        <br><strong>Modo: </strong>Define a maneira com que o MatuPBX irá ler o(s) arquivo(s) contido(s) na seção. 
+        <br><strong>Diretório: </strong>Define o nome do diretório que será usado pela seção. 
+        Por padrão usa­se o mesmo nome da seção. Não use espaços ou caracteres acentuados/especiais como: 
+        çãé@#%... 
+        <br>
+        <br><strong>IMPORTANTE:</strong> Ao excluir a seção todos os arquivos e o 
+        diretório da seção serão excluídos. A seção DEFAULT não pode ser excluída.
+        <br>O MatuPBX  somente toca arquivos do tipo WAV, GSM e MP3.
+        <br>
+
+    </body>
+</html>
